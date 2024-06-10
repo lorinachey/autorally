@@ -27,7 +27,7 @@ if(CUDA_FOUND)
       -std=c++11
       -maxrregcount=32;
       -O3;
-      -arch=sm_89;
+      -arch=sm_35;
       -w
   )
 
