@@ -11,10 +11,10 @@ if(GTSAM_FOUND)
   find_package(TBB)
   include_directories(SYSTEM ${GTSAM_INCLUDE_DIR} "/usr/local/include" ${Boost_INCLUDE_DIRS}) 
 
-  add_executable(StateEstimator StateEstimator.cpp)
-message(==========${GeographicLib_LIBRARY_DIRS}/${GeographicLib_LIBRARIES})
-  target_link_libraries(StateEstimator ${catkin_LIBRARIES} ${ROS_LIBRARIES} gtsam ${GeographicLib_LIBRARY_DIRS}/libGeographic.so ${TBB_LIBRARIES} ar_diagnostics ${Boost_LIBRARIES})
-  add_dependencies(StateEstimator autorally_msgs_gencpp)
+#  add_executable(StateEstimator StateEstimator.cpp)
+#message(==========${GeographicLib_LIBRARY_DIRS}/${GeographicLib_LIBRARIES})
+#  target_link_libraries(StateEstimator ${catkin_LIBRARIES} ${ROS_LIBRARIES} gtsam ${GeographicLib_LIBRARY_DIRS}/libGeographic.so ${TBB_LIBRARIES} ar_diagnostics ${Boost_LIBRARIES})
+#  add_dependencies(StateEstimator autorally_msgs_gencpp)
 
   install(TARGETS StateEstimator
           ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
