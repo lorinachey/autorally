@@ -35,7 +35,6 @@
 #ifndef DIAGNOSTICS_ENTRY_HPP_
 #define DIAGNOSTICS_ENTRY_HPP_
 
-#ifndef Q_MOC_RUN
 #include <ros/ros.h>
 #include <ros/time.h>
 #endif
@@ -45,6 +44,7 @@
 #include <QtGui/QStandardItem>
 #include <QtCore/QList>
 #include <diagnostic_msgs/DiagnosticArray.h>
+#ifndef Q_MOC_RUN
 
 /**
  *  @class DiagnosticsEntry DiagnosticsEntry.hpp "ocs/DiagnosticsEntry.hpp"
